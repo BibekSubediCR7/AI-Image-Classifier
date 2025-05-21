@@ -1,32 +1,43 @@
-# 🖼️ AI Image Classifier
+# AI Image Classifier
 
-A lightweight and interactive web app that classifies uploaded images using a pre-trained **MobileNetV2** model. Built with **TensorFlow**, **Streamlit**, and **OpenCV**, it offers a smooth user experience for exploring AI-powered image recognition directly in the browser.
+A simple web app that uses a pre-trained MobileNetV2 model to classify images. Built with [Streamlit](https://streamlit.io/), [TensorFlow](https://www.tensorflow.org/), and [OpenCV](https://opencv.org/).
 
----
+## Features
 
-## 🚀 Features
+- Upload an image and get the top 3 predictions for its content.
+- Fast and interactive UI powered by Streamlit.
+- Uses MobileNetV2 trained on ImageNet for robust image recognition.
 
-- 📸 Upload JPG or PNG images from your local system
-- 🤖 AI-based image classification using MobileNetV2
-- 📋 Top 3 predictions with confidence scores
-- 🎨 Clean, responsive UI built with Streamlit
+## Installation
 
----
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/yourusername/ai-image-classifier.git
+   cd ai-image-classifier
+   ```
 
-## 📦 Tech Stack
+2. **Install dependencies:**
+   ```sh
+   pip install -r requirements.txt
+   ```
 
-- **Frontend**: [Streamlit](https://streamlit.io)
-- **AI Model**: [TensorFlow Keras - MobileNetV2](https://www.tensorflow.org/api_docs/python/tf/keras/applications/MobileNetV2)
-- **Image Processing**: OpenCV, Pillow
-- **Language**: Python 3.11+
+## Usage
 
+Run the app with Streamlit:
 
----
+```sh
+streamlit run main.py
+```
 
-## ⚙️ Installation
+Open your browser and go to the URL shown in the terminal (usually http://localhost:8501).
 
-### 1. Clone the Repository
+## Project Structure
 
-```bash
-git clone https://github.com/your-username/ai-image-classifier.git
-cd ai-image-classifier
+- `main.py` — Main application code.
+- `requirements.txt` — List of required Python packages.
+
+## Credits
+
+- Model: [MobileNetV2](https://keras.io/api/applications/mobilenet/)
+- UI: [Streamlit](https://streamlit.io/)
+- Author: Bibek Subedi
